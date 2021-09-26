@@ -18,4 +18,6 @@ export class orderDto {
   createdAt: Date;
 
   updatedAt: Date;
+
+  userId: string;
 }
