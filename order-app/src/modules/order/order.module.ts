@@ -12,7 +12,7 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
       {
         name: 'PAYMENT_SERVICE',
         transport: Transport.TCP,
-        options: { port: 3002 },
+        options: { host: 'payment-app', port: 3002 },
       },
     ]),
   ],

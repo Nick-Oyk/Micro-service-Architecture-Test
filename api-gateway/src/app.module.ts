@@ -16,6 +16,7 @@ import { PaginationMiddleware } from './middlewares/pagination.middleware';
         name: 'ORDER_SERVICE',
         transport: Transport.TCP,
         options: {
+          host: 'order-app',
           port: 3001,
         },
       },
@@ -23,6 +24,7 @@ import { PaginationMiddleware } from './middlewares/pagination.middleware';
         name: 'PAYMENT_SERVICE',
         transport: Transport.TCP,
         options: {
+          host: 'payment-app',
           port: 3002,
         },
       },

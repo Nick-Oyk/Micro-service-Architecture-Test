@@ -8,6 +8,7 @@ async function bootstrap() {
     {
       transport: Transport.TCP,
       options: {
+        host: 'order-app',
         port: 3001,
       },
     },

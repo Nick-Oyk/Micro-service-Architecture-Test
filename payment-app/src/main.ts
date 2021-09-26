@@ -8,6 +8,7 @@ async function bootstrap() {
     {
       transport: Transport.TCP,
       options: {
+        host: 'payment-app',
         port: 3002,
       },
     },
