@@ -1,0 +1,44 @@
+version: "3.8"
+services:
+  api-gateway:
+    container_name: api-gateway
+    image: setel-assignment/api-gateway
+    build:
+      dockerfile: Dockerfile
+      context: api-gateway
+    depends_on:
+      - order-app
+      - payment-app
+    ports:
+      - "3000:3000"
+  order-app:
+    container_name: order-app
+    image: setel-assignment/order-app
+    build:
+      dockerfile: Dockerfile
+      context: order-app
+    depends_on:
+      - postgres
+  payment-app:
+    container_name: payment-app
+    image: setel-assignment/payment-app
+    build:
+      dockerfile: Dockerfile
+      context: payment-app
+    depends_on:
+      - mongo
+  postgres:
+    container_name: postgres-setel
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: order_development
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
