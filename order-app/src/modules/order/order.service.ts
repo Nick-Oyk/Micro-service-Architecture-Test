@@ -7,7 +7,7 @@ import { OrderRepository } from './order.repository';
 import { BadRequestException, Inject, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { orderDto } from './dto/order.dto';
-import { OrderStatus } from 'src/common/order-status';
+import { OrderStatus } from '../../common/order-status';
 import { v4 as uuidv4 } from 'uuid';
 import { updateOrderDto } from './dto/update-order.dto';
 import { getConnection } from 'typeorm';

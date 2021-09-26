@@ -1,5 +1,4 @@
-import { OrderStatus } from 'src/common/order-status';
-
+import { OrderStatus } from './../../../common/order-status';
 export class orderDto {
   id: string;
 

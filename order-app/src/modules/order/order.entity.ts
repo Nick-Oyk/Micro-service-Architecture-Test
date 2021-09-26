@@ -1,4 +1,4 @@
-import { OrderStatus } from 'src/common/order-status';
+import { OrderStatus } from '../../common/order-status';
 import {
   Entity,
   Column,

@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { BadRequestException, Inject, Injectable } from '@nestjs/common';
 import { Payment, PaymentDocument } from './payment.entity';
 import { Model } from 'mongoose';
-import { PaymentStatus } from 'src/common/payment-status';
+import { PaymentStatus } from '../../common/payment-status';
 import { ClientProxy } from '@nestjs/microservices';
 
 @Injectable()
