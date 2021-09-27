@@ -35,3 +35,35 @@ Method: POST
 http://localhost:3000/api/order/create
 ```
 
+### Cancel Order
+Method: PATCH
+```
+http://localhost:3000/api/order/cancel/:id
+```
+
+### Get All Order Status
+Method: GET
+```
+http://localhost:3000/api/order/status/all or http://localhost:3000/api/order/status/all?take=1&skip=0
+```
+
+### Get An Order Status
+Method: GET
+```
+http://localhost:3000/api/order/status/:id
+```
+
+### Get All Payment Status
+Method: GET
+```
+http://localhost:3000/api/payment/status/all
+```
+
+### Get A Payment Status
+Method: GET
+```
+http://localhost:3000/api/payment/status/:id
+```
+
+
+
