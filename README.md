@@ -1,7 +1,6 @@
-# Setel Assignment
+# Micro-service architecture test
 
-## Backend Engineer Test
-
+## 
 This application was built using docker, consisting of 3 Nestjs containers, 1 postgres container, and 1 mongodb container.
 
 ## Prerequisite
